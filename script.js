@@ -1,5 +1,5 @@
 backgroundColor = localStorage.getItem("backgroundColor") ? localStorage.getItem("backgroundColor") : localStorage.setItem("backgroundColor", "#000")
-detailColor = localStorage.getItem("detailColor") ? localStorage.getItem("detailColor") : localStorage.setItem("detailColor", "#000")
+detailColor = localStorage.getItem("detailColor") ? localStorage.getItem("detailColor") : localStorage.setItem("detailColor", "#fff")
 fontColor = localStorage.getItem("fontColor") ? localStorage.getItem("fontColor") : localStorage.setItem("fontColor", "#fff")
 
 async function onLoad() {
