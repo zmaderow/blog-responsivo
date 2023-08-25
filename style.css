@@ -12,6 +12,7 @@
   --detail-color: #fff;
 }
 
+
 header {
   display: flex;
   flex-direction: column;
@@ -25,15 +26,18 @@ header h1 {
 
 .themeMenu {
   display: flex;
-  /* width: 50%; */
-  justify-content: right;
-  align-items: center;
   position: absolute;
-  right: 3%;
-  top: 3%;
+  right: 2%;
+  top: 2%;
   padding: 0.4rem;
+  width: 3rem;
+  justify-content: center;
   border-radius: 12px;
   background-color: var(--detail-color);
+}
+
+.themeMenu i {
+  color: var(--body-bg);
 }
 
 .themeMenu button,
@@ -47,9 +51,19 @@ svg {
   border: 1.5px solid var(--font-color);
 }
 
-/* svg {
-  border-radius: 30px;
-} */
+.themeMenu .hidden {
+  display: none;
+}
+
+.themeMenu:hover .hidden {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.themeMenu:hover i {
+  display: none;
+}
 
 nav {
   margin: 3rem;
@@ -115,6 +129,7 @@ article a {
   font-size: 1rem;
   text-decoration: none;
   margin-top: 1rem;
+  margin-bottom: 0.6rem;
   color: var(--font-color);
   transition: 0.5s;
 }
@@ -228,6 +243,7 @@ footer a {
 
   .themeMenu {
     flex-direction: column;
+    width: 2rem;
   }
 }
 
