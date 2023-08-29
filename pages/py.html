@@ -189,14 +189,27 @@
         <hr>
 
         <div class="comments">
-            <h2 id="textComment">Comentários</h2>
-            <div class="boxComment">
-                <input type="text" id="inputComment" name="comment">
-                <i class="fa-solid fa-paperclip"></i>
-                <i class="fa-solid fa-paper-plane"></i>
 
+            <h2 id="textComment">Comentários</h2>
+            <div class="boxComment" id="boxComment">
+                <form name="comment">
+                    <input type="text" id="inputComment" name="inputComment" onsubmit="sendComment()">
+                    <i class=" fa-solid fa-paperclip"></i>
+                    <!-- <button type="submit"><i class="fa-solid fa-paper-plane"></i></button> -->
+                    <i onclick="sendComment()" class="fa-solid fa-paper-plane"></i>
+                </form>
             </div>
-        </div>
+
+            <!-- <div class="usersComments">
+                <div class="user">
+                    <img src="https://isaca-gwdc.org/wp-content/uploads/2016/12/male-profile-image-placeholder.png">
+                    <h2>Usuário</h2>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sunt hic nobis ducimus voluptatibus
+                    nostrum provident, esse itaque earum adipisci, molestiae nesciunt aspernatur iure, ab facere velit
+                    quibusdam est ipsum.</p>
+            </div>
+        </div> -->
     </main>
 
     <footer>

@@ -36,6 +36,7 @@ header h1 {
   background-color: var(--detail-color);
 }
 
+
 .themeMenu i {
   color: var(--body-bg);
 }
@@ -64,6 +65,7 @@ svg {
 .themeMenu:hover i {
   display: none;
 }
+
 
 nav {
   margin: 3rem;

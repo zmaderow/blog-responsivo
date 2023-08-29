@@ -16,3 +16,20 @@ function turnMode(detail, background, font) {
     document.documentElement.style.setProperty('--detail-color', detail);
     document.documentElement.style.setProperty('--font-color', font);
 }
+
+function sendComment() {
+    let message = document.forms.comment['inputComment'].value
+
+    if (message == '') return null
+    else {
+        document.getElementById("boxComment").insertAdjacentHTML("afterend", `<div class="usersComments">
+        <div class="user">
+            <img src="https://isaca-gwdc.org/wp-content/uploads/2016/12/male-profile-image-placeholder.png">
+            <h2>Usuário</h2>
+        </div>
+        <p>${message}</p>
+    </div>
+</div>`)
+        document.forms.comment['inputComment'].value = ''
+    }
+}
