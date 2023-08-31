@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeVerse | CSS</title>
+    <script src="https://kit.fontawesome.com/d7de81155c.js" crossorigin="anonymous"></script>
+    <script src="../scripts/script.js"></script>
+    <link rel="stylesheet" href="../css/pagesStyle.css">
+    <link rel="stylesheet" href="../css/background.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+</head>
+
+<body onload="onLoad()">
+
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <header>
+        <div class="return">
+            <a href="../../index.html">
+                <i class="fa-solid fa-backward"></i>
+                Voltar
+            </a>
+        </div>
+        <div class="themeMenu">
+            <i class="fa-solid fa-palette"></i>
+            <div class="hidden">
+                <button onclick="turnMode('#000', '#fff', '#000')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="1" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#1);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#87c232', '#222629', '#f7f8f8')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="3" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(34, 38, 41);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(135, 194, 50);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#3);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#c3083f', '#1a1a1c', '#edf4e0')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="4" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(26, 26, 28);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(195, 8, 63);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#4);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#faed25', '#293745', '#fff')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="5" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(41, 55, 69);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(250, 237, 37);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#5);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#fff', '#000', '#fff')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="2" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#2);" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>
+            CSS: Explorando as Características da Linguagem de Estilo para Transformar a Web
+        </h1>
+        <article>
+            <h2>Introdução</h2>
+            <p>Nos bastidores da beleza e do design visual das páginas da web está o CSS, uma linguagem de estilo que dá
+                vida à apresentação e ao layout de conteúdo online. Short for Cascading Style Sheets (Folhas de Estilo
+                em Cascata), o CSS desempenha um papel crucial na criação de interfaces atraentes e consistentes na web.
+                Neste artigo, vamos explorar as características que tornam o CSS uma ferramenta essencial para a
+                estilização e a formatação de páginas da web.</p>
+            <h2>Separação de Conteúdo e Estilo</h2>
+            <p>Uma das características fundamentais do CSS é a sua capacidade de separar o conteúdo da apresentação.
+                Isso significa que o HTML é responsável pela estrutura e pelo conteúdo da página, enquanto o CSS é usado
+                para definir o estilo, o layout e a aparência visual. Essa separação permite que os desenvolvedores
+                apliquem estilos consistentes em várias páginas sem precisar modificar o conteúdo subjacente.</p>
+            <h2>Seletor e Propriedades</h2>
+            <p>No CSS, você aplica estilos a elementos HTML usando seletores e propriedades. Os seletores determinam
+                quais elementos serão estilizados, enquanto as propriedades definem como esses elementos devem ser
+                estilizados. Isso permite um alto grau de controle sobre o design de uma página, desde cores e fontes
+                até margens e animações.</p>
+            <h2>Cascata e Especificidade</h2>
+            <p>A "Cascata" em Cascading Style Sheets refere-se à maneira como várias regras CSS interagem quando se
+                aplicam ao mesmo elemento. Quando várias regras conflitam, a especificidade das regras determina qual
+                estilo prevalecerá. Isso permite um alto grau de flexibilidade e controle, mas também exige uma
+                compreensão cuidadosa da ordem de aplicação.</p>
+            <h2>Responsividade e Media Queries </h2>
+            <p>O design responsivo é uma parte crucial do desenvolvimento web moderno, e o CSS desempenha um papel
+                importante nisso. As Media Queries permitem aplicar estilos diferentes com base nas características do
+                dispositivo do usuário, como tamanho da tela, orientação e resolução. Isso permite que as páginas se
+                adaptem automaticamente a diferentes dispositivos, garantindo uma experiência consistente em
+                smartphones, tablets e computadores.</p>
+            <h2>Conclusão</h2>
+            <p>O CSS é a ferramenta que transforma a estrutura bruta do HTML em interfaces atraentes e visualmente
+                agradáveis. Com sua capacidade de separar conteúdo e estilo, o CSS simplifica a manutenção e a
+                consistência do design em toda a web. Ao dominar as seletores, propriedades e conceitos de cascata, os
+                desenvolvedores podem criar layouts flexíveis, responsivos e impressionantes que elevam a experiência do
+                usuário online.</p>
+        </article>
+
+        <hr>
+
+        <div class="comments">
+            <h2 id="textComment">Comentários</h2>
+            <div class="boxComment" id="boxComment">
+                <form name="comment">
+                    <input type="text" id="inputComment" name="inputComment" onsubmit="sendComment()">
+                    <i class=" fa-solid fa-paperclip"></i>
+                    <i onclick="sendComment()" class="fa-solid fa-paper-plane"></i>
+                </form>
+            </div>
+    </main>
+
+    <footer>
+        <a href="#"><i class="fa-solid fa-arrow-up fa-bounce"></i></a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeVerse | JavaScript</title>
+    <script src="https://kit.fontawesome.com/d7de81155c.js" crossorigin="anonymous"></script>
+    <script src="../scripts/script.js"></script>
+    <link rel="stylesheet" href="../css/pagesStyle.css">
+    <link rel="stylesheet" href="../css/background.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+</head>
+
+<body onload="onLoad()">
+
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <header>
+        <div class="return">
+            <a href="../../index.html">
+                <i class="fa-solid fa-backward"></i>
+                Voltar
+            </a>
+        </div>
+        <div class="themeMenu">
+            <i class="fa-solid fa-palette"></i>
+            <div class="hidden">
+                <button onclick="turnMode('#000', '#fff', '#000')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="1" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#1);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#87c232', '#222629', '#f7f8f8')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="3" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(34, 38, 41);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(135, 194, 50);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#3);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#c3083f', '#1a1a1c', '#edf4e0')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="4" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(26, 26, 28);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(195, 8, 63);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#4);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#faed25', '#293745', '#fff')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="5" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(41, 55, 69);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(250, 237, 37);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#5);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#fff', '#000', '#fff')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="2" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#2);" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>
+            JavaScript: Desvendando os Poderes e Características da Linguagem de Programação Web
+        </h1>
+        <article>
+            <h2>Introdução</h2>
+            <p>JavaScript, frequentemente abreviado como JS, é uma das linguagens de programação mais influentes e
+                onipresentes da atualidade. Com uma ampla gama de aplicações que vão desde o desenvolvimento web até
+                aplicativos móveis, JavaScript desempenha um papel fundamental na criação de experiências interativas e
+                dinâmicas na internet. Neste artigo, mergulharemos nas características que tornam o JavaScript uma
+                linguagem única e essencial.</p>
+            <h2>O Coração da Web Interativa</h2>
+            <p>JavaScript é a linguagem essencial para a construção de interatividade na web. Ela permite que os
+                desenvolvedores criem páginas web dinâmicas, onde elementos podem ser manipulados, animados e
+                atualizados sem a necessidade de recarregar a página inteira. Esse recurso é especialmente visível em
+                sites de redes sociais, aplicativos de e-mail, lojas online e várias outras plataformas.</p>
+            <h2>Cliente e Servidor: Um Mundo de Oportunidades</h2>
+            <p>JavaScript não é limitado apenas ao navegador do usuário. Com o advento do Node.js, uma plataforma que
+                permite a execução de JavaScript no servidor, a linguagem agora abrange o desenvolvimento full-stack.
+                Isso significa que os desenvolvedores podem criar aplicativos web tanto no lado do cliente quanto no
+                lado do servidor usando a mesma linguagem, simplificando a coesão e a colaboração entre diferentes
+                partes de um projeto.</p>
+            <h2>Assincronicidade e Event Loop</h2>
+            <p>Uma característica crucial do JavaScript é sua natureza assíncrona. Isso permite que várias ações ocorram
+                simultaneamente sem bloquear a execução do programa. O modelo de concorrência não bloqueante é
+                viabilizado pelo Event Loop, que gerencia as chamadas de retorno (callbacks) e promessas. Isso é
+                particularmente importante para operações de E/S intensivas, como solicitações de rede, onde o código
+                pode continuar executando enquanto aguarda uma resposta.</p>
+            <h2>Ecossistema Rico de Bibliotecas e Frameworks</h2>
+            <p>O sucesso do JavaScript é amplificado pelo seu vasto ecossistema de bibliotecas e frameworks. Bibliotecas
+                populares como jQuery simplificam a manipulação do DOM e interações com a página. Frameworks como React,
+                Vue.js e Angular permitem a construção de interfaces de usuário complexas e reativas, enquanto o
+                Express.js simplifica a criação de aplicativos web no lado do servidor.</p>
+            <h2>Aprendizado Acessível e Flexibilidade</h2>
+            <p>Uma característica atraente do JavaScript é sua baixa barreira de entrada. A sintaxe é relativamente
+                simples, e muitos recursos estão disponíveis para ajudar iniciantes a começar a programar. Além disso, a
+                natureza flexível da linguagem permite que os desenvolvedores experimentem diferentes estilos de
+                programação e paradigmas à medida que ganham mais experiência.</p>
+            <h2>Conclusão</h2>
+            <p>JavaScript é a cola que mantém a web unida, capacitando desenvolvedores a criar experiências interativas
+                e dinâmicas que os usuários adoram. Com sua versatilidade, capacidade de executar em ambos os lados da
+                comunicação cliente-servidor e uma comunidade ativa, o JavaScript continuará a moldar o presente e o
+                futuro da programação web e além. Se você está começando ou é um veterano na programação, JavaScript
+                oferece um mundo rico de possibilidades criativas e inovações tecnológicas.</p>
+        </article>
+
+        <hr>
+
+        <div class="comments">
+            <h2 id="textComment">Comentários</h2>
+            <div class="boxComment" id="boxComment">
+                <form name="comment">
+                    <input type="text" id="inputComment" name="inputComment" onsubmit="sendComment()">
+                    <i class=" fa-solid fa-paperclip"></i>
+                    <i onclick="sendComment()" class="fa-solid fa-paper-plane"></i>
+                </form>
+            </div>
+    </main>
+
+    <footer>
+        <a href="#"><i class="fa-solid fa-arrow-up fa-bounce"></i></a>
+    </footer>
+</body>
+
+</html>

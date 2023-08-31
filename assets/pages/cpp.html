@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeVerse | C++</title>
+    <script src="https://kit.fontawesome.com/d7de81155c.js" crossorigin="anonymous"></script>
+    <script src="../scripts/script.js"></script>
+    <link rel="stylesheet" href="../css/pagesStyle.css">
+    <link rel="stylesheet" href="../css/background.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+</head>
+
+<body onload="onLoad()">
+
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <header>
+        <div class="return">
+            <a href="../../index.html">
+                <i class="fa-solid fa-backward"></i>
+                Voltar
+            </a>
+        </div>
+        <div class="themeMenu">
+            <i class="fa-solid fa-palette"></i>
+            <div class="hidden">
+                <button onclick="turnMode('#000', '#fff', '#000')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="1" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#1);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#87c232', '#222629', '#f7f8f8')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="3" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(34, 38, 41);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(135, 194, 50);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#3);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#c3083f', '#1a1a1c', '#edf4e0')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="4" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(26, 26, 28);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(195, 8, 63);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#4);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#faed25', '#293745', '#fff')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="5" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(41, 55, 69);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(250, 237, 37);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#5);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#fff', '#000', '#fff')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="2" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#2);" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>
+            C++: Explorando as Características de uma Linguagem de Programação Versátil e Poderosa
+        </h1>
+        <article>
+            <h2>Introdução</h2>
+            <p>C++ é uma linguagem de programação que combina a elegância da programação orientada a objetos com a
+                eficiência da programação em baixo nível. Com um histórico sólido e um amplo espectro de aplicações, o
+                C++ se destaca como uma escolha popular para uma variedade de projetos de desenvolvimento. Neste artigo,
+                vamos mergulhar nas características que fazem do C++ uma linguagem única e poderosa.</p>
+            <h2>Uma Evolução do C</h2>
+            <p>C++ teve suas raízes no popular linguagem de programação C. Bjarne Stroustrup, criador do C++, viu a
+                oportunidade de estender o C com recursos de programação orientada a objetos, o que resultou em uma
+                linguagem que preservava a eficiência do C, mas também abraçava a abstração e a reutilização de código
+                fornecidas pela orientação a objetos.</p>
+            <h2>Programação Orientada a Objetos</h2>
+            <p>Uma das características mais notáveis do C++ é sua abordagem à programação orientada a objetos (POO). A
+                linguagem permite que os desenvolvedores criem classes, objetos e hierarquias de herança, facilitando a
+                organização e a estruturação do código. Isso promove a modularidade, o reúso de código e a manutenção
+                simplificada, tornando o desenvolvimento de projetos complexos mais gerenciável.</p>
+            <h2>Controle de Memória</h2>
+            <p>Uma das razões pelas quais o C++ é amplamente utilizado em sistemas e aplicativos de alto desempenho é o
+                seu controle direto sobre a alocação e desalocação de memória. Os programadores podem usar ponteiros e
+                alocação dinâmica de memória, o que oferece flexibilidade, mas também exige responsabilidade para evitar
+                vazamentos de memória.</p>
+            <h2>Eficiência e Desempenho</h2>
+            <p>Uma das maiores vantagens do C++ é sua eficiência. A linguagem permite programar em um nível mais próximo
+                do hardware, o que resulta em código altamente otimizado. Além disso, a possibilidade de evitar o
+                overhead de abstrações desnecessárias torna o C++ uma escolha popular para desenvolvimento de sistemas,
+                jogos e outras aplicações que demandam alto desempenho.</p>
+            <h2>Bibliotecas e Ecossistema</h2>
+            <p>C++ possui uma vasta coleção de bibliotecas padrão e de terceiros, que abrangem desde manipulação de
+                strings e E/S até algoritmos complexos de processamento de dados. Além disso, frameworks como Qt e Boost
+                fornecem ferramentas poderosas para desenvolvimento de interfaces de usuário, networking e muito mais.
+            </p>
+            <h2>Conclusão</h2>
+            <p>C++ é uma linguagem de programação rica em características, capaz de atender a uma ampla gama de
+                requisitos de desenvolvimento. Sua combinação de eficiência, programação orientada a objetos e controle
+                de memória oferece aos desenvolvedores a capacidade de criar sistemas complexos e de alto desempenho.
+                Seja para desenvolvimento de software de sistemas, jogos, aplicativos de desktop ou projetos de
+                pesquisa, C++ continua a desempenhar um papel fundamental na programação moderna.</p>
+        </article>
+
+        <hr>
+
+        <div class="comments">
+            <h2 id="textComment">Comentários</h2>
+            <div class="boxComment" id="boxComment">
+                <form name="comment">
+                    <input type="text" id="inputComment" name="inputComment" onsubmit="sendComment()">
+                    <i class=" fa-solid fa-paperclip"></i>
+                    <i onclick="sendComment()" class="fa-solid fa-paper-plane"></i>
+                </form>
+            </div>
+    </main>
+
+    <footer>
+        <a href="#"><i class="fa-solid fa-arrow-up fa-bounce"></i></a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeVerse | TypeScript</title>
+    <script src="https://kit.fontawesome.com/d7de81155c.js" crossorigin="anonymous"></script>
+    <script src="../scripts/script.js"></script>
+    <link rel="stylesheet" href="../css/pagesStyle.css">
+    <link rel="stylesheet" href="../css/background.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-dark.min.css" rel="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-core.min.js"></script>
+
+
+</head>
+
+<body onload="onLoad()">
+
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <header>
+        <div class="return">
+            <a href="../../index.html">
+                <i class="fa-solid fa-backward"></i>
+                Voltar
+            </a>
+        </div>
+        <div class="themeMenu">
+            <i class="fa-solid fa-palette"></i>
+            <div class="hidden">
+                <button onclick="turnMode('#000', '#fff', '#000')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="1" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#1);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#87c232', '#222629', '#f7f8f8')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="3" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(34, 38, 41);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(135, 194, 50);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#3);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#c3083f', '#1a1a1c', '#edf4e0')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="4" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(26, 26, 28);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(195, 8, 63);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#4);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#faed25', '#293745', '#fff')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="5" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(41, 55, 69);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(250, 237, 37);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#5);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#fff', '#000', '#fff')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="2" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#2);" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>
+            TypeScript: Explorando as Características de uma Linguagem de Programação para Desenvolvimento Web Moderno
+        </h1>
+        <article>
+            <h2>Introdução</h2>
+            <p>Nos ambientes de desenvolvimento web modernos, a complexidade e a escala das aplicações estão em
+                constante crescimento. Para enfrentar esses desafios, surge o TypeScript, uma linguagem de programação
+                que combina as características da programação orientada a objetos com as vantagens da tipagem estática.
+                Neste artigo, vamos explorar as características que tornam o TypeScript uma escolha poderosa e eficaz
+                para o desenvolvimento web.</p>
+            <h2>Uma Extensão do JavaScript</h2>
+            <p>O TypeScript é uma extensão do JavaScript, adicionando recursos de tipagem estática e abordagens
+                orientadas a objetos à linguagem. Ele é desenvolvido pela Microsoft e ganhou popularidade rapidamente
+                como uma forma de melhorar a qualidade e a escalabilidade do código JavaScript.</p>
+            <h2>Tipagem Estática para Maior Confiança</h2>
+            <p>Uma das características distintivas do TypeScript é a sua tipagem estática. Ao contrário do JavaScript,
+                onde os tipos de variáveis podem ser inferidos em tempo de execução, o TypeScript exige que os tipos
+                sejam declarados explicitamente. Isso ajuda os desenvolvedores a capturar erros antes mesmo de executar
+                o código, melhorando a robustez e a qualidade do software.</p>
+            <!-- <pre><code>
+                // Exemplo de uso de tipos em TypeScript
+                    function calculateArea(radius: number): number {
+                        return 3.14159 * radius * radius;
+                    }
+                    </code></pre> -->
+            <h2>Desenvolvimento Mais Organizado com Interfaces</h2>
+            <p>O TypeScript introduz o conceito de interfaces, que permite aos desenvolvedores definir estruturas de
+                dados e contratos de objetos. Isso não apenas ajuda a garantir que o código seja usado de acordo com as
+                expectativas, mas também facilita a colaboração entre equipes, pois a estrutura do código fica
+                claramente definida.</p>
+            <h2>Recursos Modernos de ECMAScript</h2>
+            <p>O TypeScript suporta os recursos mais modernos do ECMAScript (a especificação na qual o JavaScript é
+                baseado), incluindo classes, módulos, arrow functions e muito mais. Isso permite que os desenvolvedores
+                aproveitem as melhores práticas e as funcionalidades mais recentes da linguagem, enquanto ainda se
+                beneficiam da tipagem estática do TypeScript.</p>
+            <h2>Compilação para JavaScript</h2>
+            <p>Uma das vantagens do TypeScript é que, embora seja uma linguagem distinta, ela se compila diretamente
+                para JavaScript. Isso significa que o código TypeScript pode ser executado em qualquer ambiente que
+                suporte JavaScript, seja em navegadores ou servidores. A compilação também permite que os
+                desenvolvedores usem recursos avançados do TypeScript durante o desenvolvimento e, em seguida, gerem
+                código JavaScript otimizado para produção.</p>
+            <h2>Conclusão</h2>
+            <p>O TypeScript é uma resposta direta à necessidade de desenvolvimento web moderno, onde a escalabilidade, a
+                confiabilidade e a organização do código são cruciais. Ao combinar tipagem estática com recursos
+                modernos do JavaScript, o TypeScript oferece aos desenvolvedores uma ferramenta poderosa para construir
+                aplicações robustas e de alta qualidade. Com uma comunidade ativa e suporte de empresas líderes do
+                setor, o TypeScript continua a ganhar espaço no mundo do desenvolvimento web.</p>
+        </article>
+
+        <hr>
+
+        <div class="comments">
+            <h2 id="textComment">Comentários</h2>
+            <div class="boxComment" id="boxComment">
+                <form name="comment">
+                    <input type="text" id="inputComment" name="inputComment" onsubmit="sendComment()">
+                    <i class=" fa-solid fa-paperclip"></i>
+                    <i onclick="sendComment()" class="fa-solid fa-paper-plane"></i>
+                </form>
+            </div>
+    </main>
+
+    <footer>
+        <a href="#"><i class="fa-solid fa-arrow-up fa-bounce"></i></a>
+    </footer>
+</body>
+
+</html>

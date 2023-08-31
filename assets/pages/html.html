@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeVerse | HTML</title>
+    <script src="https://kit.fontawesome.com/d7de81155c.js" crossorigin="anonymous"></script>
+    <script src="../scripts/script.js"></script>
+    <link rel="stylesheet" href="../css/pagesStyle.css">
+    <link rel="stylesheet" href="../css/background.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+</head>
+
+<body onload="onLoad()">
+
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <header>
+        <div class="return">
+            <a href="../../index.html">
+                <i class="fa-solid fa-backward"></i>
+                Voltar
+            </a>
+        </div>
+        <div class="themeMenu">
+            <i class="fa-solid fa-palette"></i>
+            <div class="hidden">
+                <button onclick="turnMode('#000', '#fff', '#000')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="1" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#1);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#87c232', '#222629', '#f7f8f8')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="3" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(34, 38, 41);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(135, 194, 50);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#3);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#c3083f', '#1a1a1c', '#edf4e0')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="4" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(26, 26, 28);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(195, 8, 63);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#4);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#faed25', '#293745', '#fff')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="5" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(41, 55, 69);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(250, 237, 37);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#5);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#fff', '#000', '#fff')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="2" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#2);" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>
+            HTML: a Linguagem de Marcação que Sustenta a Web
+        </h1>
+        <article>
+            <h2>Introdução</h2>
+            <p>No cerne da World Wide Web está o HTML, uma linguagem de marcação que possibilita a criação e a
+                estruturação de conteúdo online. HTML, que significa HyperText Markup Language (Linguagem de Marcação de
+                Hipertexto), desempenha um papel fundamental na construção de páginas da web e na apresentação de
+                informações de maneira organizada e acessível. Neste artigo, vamos explorar as características que fazem
+                do HTML a espinha dorsal da internet moderna.</p>
+            <h2>Estrutura Hierárquica e Elementos</h2>
+            <p>O HTML é baseado em uma estrutura hierárquica de elementos, onde cada elemento é marcado por tags. As
+                tags definem a função e a formatação do conteúdo dentro delas. Os elementos podem ser aninhados para
+                criar uma estrutura organizada, facilitando a divisão lógica e visual do conteúdo.</p>
+            <h2>Hipertexto e Links</h2>
+            <p>O termo "hipertexto" em HTML se refere à capacidade de criar links entre diferentes páginas e recursos
+                online. Isso é possível com a tag &lt;a&gt; (âncora), que cria hiperlinks para outros URLs. Os links são
+                essenciais para a navegação na web e permitem que os usuários explorem conteúdo relacionado e
+                interconectado.</p>
+            <h2>Semântica e Acessibilidade</h2>
+            <p>Uma característica crucial do HTML moderno é a ênfase na semântica. Isso significa que as tags HTML devem
+                refletir com precisão o significado e a estrutura do conteúdo que elas envolvem. Tags semânticas, como
+                &lt;header&gt;, &lt;nav&gt;, &lt;article&gt;, &lt;section&gt; e &lt;footer&gt;, não apenas ajudam na
+                formatação visual, mas também
+                melhoram a acessibilidade e a indexação de motores de busca.</p>
+            <h2>Integração Multimídia</h2>
+            <p>HTML permite a integração de vários tipos de mídia, como imagens, áudio e vídeo. Isso é alcançado por
+                meio de tags específicas, como &lt;img&gt;, &lt;audio&gt; e &lt;video&gt;. Essa capacidade de incorporar
+                mídia enriquece a
+                experiência do usuário, permitindo a apresentação de informações de maneira mais envolvente.</p>
+            <h2>Conclusão</h2>
+            <p>O HTML é o alicerce da web moderna, permitindo que informações e conteúdo sejam apresentados de maneira
+                estruturada, organizada e interconectada. Com sua sintaxe de marcação intuitiva e tags flexíveis, o HTML
+                capacita desenvolvedores a criar uma ampla variedade de páginas da web, desde sites simples até
+                aplicativos web complexos. Sua constante evolução e suporte às melhores práticas de semântica e
+                acessibilidade garantem que o HTML continue a ser uma parte vital do ecossistema da internet.</p>
+        </article>
+
+        <hr>
+
+        <div class="comments">
+            <h2 id="textComment">Comentários</h2>
+            <div class="boxComment" id="boxComment">
+                <form name="comment">
+                    <input type="text" id="inputComment" name="inputComment" onsubmit="sendComment()">
+                    <i class=" fa-solid fa-paperclip"></i>
+                    <i onclick="sendComment()" class="fa-solid fa-paper-plane"></i>
+                </form>
+            </div>
+    </main>
+
+    <footer>
+        <a href="#"><i class="fa-solid fa-arrow-up fa-bounce"></i></a>
+    </footer>
+</body>
+
+</html>

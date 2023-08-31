@@ -1,0 +1,287 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  text-align: center;
+  color: var(--font-color);
+  transition: 0.3s;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --body-bg: #000;
+  --font-color: #fff;
+  --detail-color: #fff;
+}
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2%;
+}
+
+header h1 {
+  font-size: 400%;
+  overflow: hidden;
+  border-right: .05em solid var(--detail-color);
+  white-space: nowrap;
+  margin: 0 auto;
+  animation:
+    typing 1.5s steps(20, end),
+    blink-caret .7s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0rem
+  }
+
+  to {
+    width: 20rem
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: var(--detail-color);
+  }
+}
+
+header h2 {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 100%;
+}
+
+.themeMenu {
+  display: flex;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  padding: 0.4rem;
+  width: 3rem;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: var(--detail-color);
+}
+
+
+.themeMenu i {
+  color: var(--body-bg);
+}
+
+.themeMenu button,
+svg {
+  border-radius: 8px;
+  border: none;
+  background: none;
+}
+
+.themeMenu svg {
+  border: 1.5px solid var(--font-color);
+}
+
+.themeMenu .hidden {
+  display: none;
+}
+
+.themeMenu:hover .hidden {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.themeMenu:hover i {
+  display: none;
+}
+
+
+nav {
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--font-color);
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border-left: 2px solid var(--detail-color);
+  border-right: 2px solid var(--detail-color);
+  transition: 0.3s;
+}
+
+nav a:hover {
+  transition: 0.3s;
+  transform: scale(1.15);
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.posts {
+  width: 78%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  background-color: var(--body-bg);
+  margin: 1rem 0.5rem;
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: 2px solid var(--detail-color);
+  justify-content: center;
+
+}
+
+article p {
+  padding: 1.5rem 2rem;
+  height: 50%;
+  color: var(--font-color);
+  margin-bottom: 1rem;
+}
+
+article a {
+  border: 2px solid var(--detail-color);
+  border-radius: 15px;
+  box-shadow: 0px 3px var(--detail-color);
+  padding: 0.7rem;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-top: 1rem;
+  margin-bottom: 0.6rem;
+  color: var(--font-color);
+  transition: 0.5s;
+}
+
+article a:hover {
+  transition: 0.5s;
+  box-shadow: none;
+  transform: translateY(5%);
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article h2 {
+  justify-content: center;
+  display: inline;
+  position: absolute;
+  z-index: 1000;
+  color: var(--body-bg);
+}
+
+.top img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+aside {
+  width: 22%;
+  height: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 2px solid var(--detail-color);
+  border-radius: 20px;
+  background-color: var(--body-bg);
+}
+
+aside img {
+  width: 80%;
+  border-radius: 50%;
+  border: 2px solid var(--detail-color);
+  margin-bottom: 1rem;
+}
+
+aside a {
+  display: flex;
+  justify-content: center;
+  color: var(--font-color);
+  text-decoration: none;
+  border: 1px solid var(--detail-color);
+  border-radius: 15px;
+  box-shadow: 0.5px 2px var(--detail-color);
+  margin-top: 1rem;
+  padding: 0.3rem;
+  align-items: center;
+  transition: 0.5s;
+}
+
+aside a:hover {
+  transition: 0.5s;
+  box-shadow: none;
+  transform: translateY(5%);
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+aside a i {
+  font-size: 1.6rem;
+  margin-right: 0.3rem;
+}
+
+footer {
+  margin-top: 2rem;
+  border-top: 2px solid var(--detail-color);
+  padding: 1.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+  aside {
+    display: none;
+  }
+
+  article {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  nav a {
+    width: 75%;
+    margin: 2px;
+    border: none;
+    border-bottom: 2px solid var(--detail-color);
+  }
+
+  .themeMenu {
+    flex-direction: column;
+    width: 2rem;
+  }
+}

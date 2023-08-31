@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeVerse | Python</title>
+    <script src="https://kit.fontawesome.com/d7de81155c.js" crossorigin="anonymous"></script>
+    <script src="../scripts/script.js"></script>
+    <link rel="stylesheet" href="../css/pagesStyle.css">
+    <link rel="stylesheet" href="../css/background.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+</head>
+
+<body onload="onLoad()">
+
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <header>
+        <div class="return">
+            <a href="../../index.html">
+                <i class="fa-solid fa-backward"></i>
+                Voltar
+            </a>
+        </div>
+        <div class="themeMenu">
+            <i class="fa-solid fa-palette"></i>
+            <div class="hidden">
+                <button onclick="turnMode('#000', '#fff', '#000')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="1" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#1);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#87c232', '#222629', '#f7f8f8')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="3" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(34, 38, 41);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(135, 194, 50);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#3);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#c3083f', '#1a1a1c', '#edf4e0')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="4" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(26, 26, 28);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(195, 8, 63);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#4);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#faed25', '#293745', '#fff')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="5" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(41, 55, 69);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(250, 237, 37);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#5);" />
+                    </svg>
+                </button>
+
+                <button onclick="turnMode('#fff', '#000', '#fff')">
+                    <svg width="20" height="20">
+                        <defs>
+                            <linearGradient id="2" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="20" height="20" style="fill:url(#2);" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>
+            Python: Explorando as Características de uma Linguagem de Programação Poderosa e Versátil
+        </h1>
+        <article>
+            <h2>Introdução</h2>
+            <p>Python, uma linguagem de programação que combina simplicidade, flexibilidade e poder, tem ganhado
+                destaque no cenário de desenvolvimento nos últimos anos. Com uma sintaxe clara e elegante, Python
+                tornou-se uma escolha popular entre programadores de todas as experiências, desde iniciantes até
+                especialistas em programação. Neste artigo, vamos explorar algumas das características que tornam Python
+                tão única e eficaz.</p>
+            <h2>Sintaxe Limpa e Legível</h2>
+            <p>Uma das características mais distintivas do Python é sua sintaxe limpa e legível. A linguagem foi
+                projetada para ser semelhante à linguagem humana, o que a torna fácil de aprender e compreender. A
+                ênfase em espaçamento e indentação adequados é uma parte essencial da sintaxe do Python, o que incentiva
+                a escrita de código organizado e bem estruturado.</p>
+            <p>A simplicidade da sintaxe Python permite que os desenvolvedores se concentrem na lógica do programa em
+                vez de se preocuparem com detalhes complexos de formatação.</p>
+            <h2>Multiparadigma e Versatilidade</h2>
+            <p>Python é conhecido como uma linguagem multiparadigma, o que significa que suporta diferentes estilos de
+                programação, como programação orientada a objetos, programação funcional e programação procedural. Isso
+                confere aos programadores a flexibilidade de escolher a abordagem que melhor se adapte ao problema em
+                questão.</p>
+            <p>A orientação a objetos, por exemplo, é uma parte fundamental do Python, permitindo que os desenvolvedores
+                criem classes e objetos para organizar e estruturar o código de maneira mais eficaz. No entanto, a
+                linguagem não é restrita a esse paradigma, o que a torna uma ferramenta versátil para várias aplicações.
+            </p>
+            <h2>Bibliotecas Abundantes e Comunidade Ativa</h2>
+            <p>Uma das maiores vantagens do Python é sua vasta coleção de bibliotecas e módulos disponíveis. A
+                biblioteca padrão do Python inclui uma ampla gama de funcionalidades, desde manipulação de strings até
+                acesso a sockets de rede. Além disso, existem bibliotecas de terceiros desenvolvidas pela comunidade que
+                abordam praticamente todas as necessidades imagináveis, como ciência de dados, aprendizado de máquina,
+                desenvolvimento web, automação e muito mais.</p>
+            <p>A comunidade Python é ativa e engajada, o que significa que os desenvolvedores têm acesso a recursos,
+                documentação e suporte constantes. Isso torna mais fácil resolver problemas, aprender e compartilhar
+                conhecimento com outros programadores.</p>
+            <h2>Portabilidade e Facilidade de Uso</h2>
+            <p>Python é uma linguagem portátil, o que significa que os programas escritos em Python podem ser executados
+                em várias plataformas sem a necessidade de modificações extensivas. Isso é possível devido à abstração
+                das camadas de sistema, o que facilita a criação de programas que funcionam em diferentes sistemas
+                operacionais.</p>
+            <p>Além disso, a natureza interpretada do Python permite que os desenvolvedores testem e executem o código
+                de maneira rápida e eficiente. Não há necessidade de compilar o código antes da execução, o que agiliza
+                o processo de desenvolvimento e depuração.</p>
+            <h2>Conclusão</h2>
+            <p>Python é muito mais do que apenas uma linguagem de programação. É uma ferramenta que capacita os
+                desenvolvedores a transformar ideias em realidade de maneira eficaz e eficiente. Com uma sintaxe
+                intuitiva, flexibilidade paradigma e um ecossistema rico em bibliotecas, Python continua a ser uma
+                escolha de destaque para uma variedade de aplicações, desde o desenvolvimento web até a pesquisa
+                científica. Se você está apenas começando sua jornada na programação ou é um veterano experiente, Python
+                oferece um ambiente acolhedor e poderoso para criar soluções inovadoras.</p>
+        </article>
+
+        <hr>
+
+        <div class="comments">
+            <h2 id="textComment">Comentários</h2>
+            <div class="boxComment" id="boxComment">
+                <form name="comment">
+                    <input type="text" id="inputComment" name="inputComment" onsubmit="sendComment()">
+                    <i class=" fa-solid fa-paperclip"></i>
+                    <i onclick="sendComment()" class="fa-solid fa-paper-plane"></i>
+                </form>
+            </div>
+    </main>
+
+    <footer>
+        <a href="#"><i class="fa-solid fa-arrow-up fa-bounce"></i></a>
+    </footer>
+</body>
+
+</html>
