@@ -27,10 +27,19 @@ header h1 {
   border-right: .05em solid var(--detail-color);
   white-space: nowrap;
   margin: 0 auto;
+  /* text-shadow: 10px 5px 10px var(--detail-color); */
   animation:
-    typing 1.5s steps(20, end),
+    typing 1.1s steps(15, end),
     blink-caret .7s step-end infinite;
 }
+
+/* .verse {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("https://img.freepik.com/free-vector/realistic-colorful-galaxy-background_23-2148965681.jpg");
+  text-shadow: 7px 7px 0px var(--detail-color);
+} */
 
 @keyframes typing {
   from {
