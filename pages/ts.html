@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Python</title>
+    <title>Blog | TypeScript</title>
     <script src="https://kit.fontawesome.com/d7de81155c.js" crossorigin="anonymous"></script>
     <script src="../script.js"></script>
     <link rel="stylesheet" href="../pagesStyle.css">
     <link rel="stylesheet" href="../background.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script> -->
 </head>
 
 <body onload="onLoad()">
@@ -139,55 +143,52 @@
     </header>
     <main>
         <h1>
-            Python: Explorando as Características de uma Linguagem de Programação Poderosa e Versátil
+            TypeScript: Explorando as Características de uma Linguagem de Programação para Desenvolvimento Web Moderno
         </h1>
         <article>
             <h2>Introdução</h2>
-            <p>Python, uma linguagem de programação que combina simplicidade, flexibilidade e poder, tem ganhado
-                destaque no cenário de desenvolvimento nos últimos anos. Com uma sintaxe clara e elegante, Python
-                tornou-se uma escolha popular entre programadores de todas as experiências, desde iniciantes até
-                especialistas em programação. Neste artigo, vamos explorar algumas das características que tornam Python
-                tão única e eficaz.</p>
-            <h2>Sintaxe Limpa e Legível</h2>
-            <p>Uma das características mais distintivas do Python é sua sintaxe limpa e legível. A linguagem foi
-                projetada para ser semelhante à linguagem humana, o que a torna fácil de aprender e compreender. A
-                ênfase em espaçamento e indentação adequados é uma parte essencial da sintaxe do Python, o que incentiva
-                a escrita de código organizado e bem estruturado.</p>
-            <p>A simplicidade da sintaxe Python permite que os desenvolvedores se concentrem na lógica do programa em
-                vez de se preocuparem com detalhes complexos de formatação.</p>
-            <h2>Multiparadigma e Versatilidade</h2>
-            <p>Python é conhecido como uma linguagem multiparadigma, o que significa que suporta diferentes estilos de
-                programação, como programação orientada a objetos, programação funcional e programação procedural. Isso
-                confere aos programadores a flexibilidade de escolher a abordagem que melhor se adapte ao problema em
-                questão.</p>
-            <p>A orientação a objetos, por exemplo, é uma parte fundamental do Python, permitindo que os desenvolvedores
-                criem classes e objetos para organizar e estruturar o código de maneira mais eficaz. No entanto, a
-                linguagem não é restrita a esse paradigma, o que a torna uma ferramenta versátil para várias aplicações.
-            </p>
-            <h2>Bibliotecas Abundantes e Comunidade Ativa</h2>
-            <p>Uma das maiores vantagens do Python é sua vasta coleção de bibliotecas e módulos disponíveis. A
-                biblioteca padrão do Python inclui uma ampla gama de funcionalidades, desde manipulação de strings até
-                acesso a sockets de rede. Além disso, existem bibliotecas de terceiros desenvolvidas pela comunidade que
-                abordam praticamente todas as necessidades imagináveis, como ciência de dados, aprendizado de máquina,
-                desenvolvimento web, automação e muito mais.</p>
-            <p>A comunidade Python é ativa e engajada, o que significa que os desenvolvedores têm acesso a recursos,
-                documentação e suporte constantes. Isso torna mais fácil resolver problemas, aprender e compartilhar
-                conhecimento com outros programadores.</p>
-            <h2>Portabilidade e Facilidade de Uso</h2>
-            <p>Python é uma linguagem portátil, o que significa que os programas escritos em Python podem ser executados
-                em várias plataformas sem a necessidade de modificações extensivas. Isso é possível devido à abstração
-                das camadas de sistema, o que facilita a criação de programas que funcionam em diferentes sistemas
-                operacionais.</p>
-            <p>Além disso, a natureza interpretada do Python permite que os desenvolvedores testem e executem o código
-                de maneira rápida e eficiente. Não há necessidade de compilar o código antes da execução, o que agiliza
-                o processo de desenvolvimento e depuração.</p>
+            <p>Nos ambientes de desenvolvimento web modernos, a complexidade e a escala das aplicações estão em
+                constante crescimento. Para enfrentar esses desafios, surge o TypeScript, uma linguagem de programação
+                que combina as características da programação orientada a objetos com as vantagens da tipagem estática.
+                Neste artigo, vamos explorar as características que tornam o TypeScript uma escolha poderosa e eficaz
+                para o desenvolvimento web.</p>
+            <h2>Uma Extensão do JavaScript</h2>
+            <p>O TypeScript é uma extensão do JavaScript, adicionando recursos de tipagem estática e abordagens
+                orientadas a objetos à linguagem. Ele é desenvolvido pela Microsoft e ganhou popularidade rapidamente
+                como uma forma de melhorar a qualidade e a escalabilidade do código JavaScript.</p>
+            <h2>Tipagem Estática para Maior Confiança</h2>
+            <p>Uma das características distintivas do TypeScript é a sua tipagem estática. Ao contrário do JavaScript,
+                onde os tipos de variáveis podem ser inferidos em tempo de execução, o TypeScript exige que os tipos
+                sejam declarados explicitamente. Isso ajuda os desenvolvedores a capturar erros antes mesmo de executar
+                o código, melhorando a robustez e a qualidade do software.</p>
+            <pre><code>
+                // Exemplo de uso de tipos em TypeScript
+                    function calculateArea(radius: number): number {
+                        return 3.14159 * radius * radius;
+                    }
+                    </code></pre>
+            <h2>Desenvolvimento Mais Organizado com Interfaces</h2>
+            <p>O TypeScript introduz o conceito de interfaces, que permite aos desenvolvedores definir estruturas de
+                dados e contratos de objetos. Isso não apenas ajuda a garantir que o código seja usado de acordo com as
+                expectativas, mas também facilita a colaboração entre equipes, pois a estrutura do código fica
+                claramente definida.</p>
+            <h2>Recursos Modernos de ECMAScript</h2>
+            <p>O TypeScript suporta os recursos mais modernos do ECMAScript (a especificação na qual o JavaScript é
+                baseado), incluindo classes, módulos, arrow functions e muito mais. Isso permite que os desenvolvedores
+                aproveitem as melhores práticas e as funcionalidades mais recentes da linguagem, enquanto ainda se
+                beneficiam da tipagem estática do TypeScript.</p>
+            <h2>Compilação para JavaScript</h2>
+            <p>Uma das vantagens do TypeScript é que, embora seja uma linguagem distinta, ela se compila diretamente
+                para JavaScript. Isso significa que o código TypeScript pode ser executado em qualquer ambiente que
+                suporte JavaScript, seja em navegadores ou servidores. A compilação também permite que os
+                desenvolvedores usem recursos avançados do TypeScript durante o desenvolvimento e, em seguida, gerem
+                código JavaScript otimizado para produção.</p>
             <h2>Conclusão</h2>
-            <p>Python é muito mais do que apenas uma linguagem de programação. É uma ferramenta que capacita os
-                desenvolvedores a transformar ideias em realidade de maneira eficaz e eficiente. Com uma sintaxe
-                intuitiva, flexibilidade paradigma e um ecossistema rico em bibliotecas, Python continua a ser uma
-                escolha de destaque para uma variedade de aplicações, desde o desenvolvimento web até a pesquisa
-                científica. Se você está apenas começando sua jornada na programação ou é um veterano experiente, Python
-                oferece um ambiente acolhedor e poderoso para criar soluções inovadoras.</p>
+            <p>O TypeScript é uma resposta direta à necessidade de desenvolvimento web moderno, onde a escalabilidade, a
+                confiabilidade e a organização do código são cruciais. Ao combinar tipagem estática com recursos
+                modernos do JavaScript, o TypeScript oferece aos desenvolvedores uma ferramenta poderosa para construir
+                aplicações robustas e de alta qualidade. Com uma comunidade ativa e suporte de empresas líderes do
+                setor, o TypeScript continua a ganhar espaço no mundo do desenvolvimento web.</p>
         </article>
 
         <hr>
